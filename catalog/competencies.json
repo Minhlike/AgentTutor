@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "competencies": [
+    {"id":"comp-foundations-testing","track_id":"track-foundations","name":"Thiết kế và kiểm thử phần mềm","prerequisites":[],"acceptance":"Giải thích contract, viết test có ý nghĩa và tự sửa lỗi từ kết quả test."},
+    {"id":"comp-foundations-dsa","track_id":"track-foundations","name":"Cấu trúc dữ liệu và thuật toán","prerequisites":[],"acceptance":"Chọn cấu trúc dữ liệu phù hợp, phân tích độ phức tạp và chứng minh bằng bài làm."},
+    {"id":"comp-java-backend","track_id":"track-java","name":"Java và Spring Boot backend","prerequisites":["comp-foundations-testing"],"acceptance":"Tự xây API có validation, persistence và kiểm thử."},
+    {"id":"comp-python-api","track_id":"track-python","name":"Python API và xử lý dữ liệu","prerequisites":["comp-foundations-testing"],"acceptance":"Tự viết service và test dữ liệu lỗi/biên."},
+    {"id":"comp-go-service","track_id":"track-go","name":"Go service và concurrency","prerequisites":["comp-foundations-testing"],"acceptance":"Tự viết service, kiểm soát context/concurrency và test race phù hợp."},
+    {"id":"comp-web-app","track_id":"track-web","name":"Web và TypeScript","prerequisites":["comp-foundations-testing"],"acceptance":"Tự xây UI có trạng thái, lỗi và kiểm thử phù hợp."},
+    {"id":"comp-distributed-design","track_id":"track-distributed","name":"Thiết kế hệ phân tán","prerequisites":["comp-foundations-testing"],"acceptance":"Nêu consistency/failure model và kiểm thử kịch bản lỗi."},
+    {"id":"comp-devops-baseline","track_id":"track-devops","name":"Infrastructure baseline","prerequisites":[],"acceptance":"Có bằng chứng cấu hình, kiểm tra và khả năng phục hồi theo rubric được thống nhất."}
+  ]
+}

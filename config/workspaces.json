@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "workspaces": [
+    {
+      "id": "ws-agenttutor", "name": "AgentTutor", "type": "learning-record",
+      "local_path": "D:\\Agent_tutorial", "remote_url": "https://github.com/Minhlike/AgentTutor",
+      "role": "Learning profile and history", "source_of_truth": "learning-record",
+      "permissions": ["read", "write", "commit", "push"],
+      "sync_rule": "Commit at accepted checkpoints; push after validation and public-data review"
+    },
+    {
+      "id": "ws-opslens", "name": "OpsLens", "type": "product-repository",
+      "local_path": "D:\\opslendev", "remote_url": "https://github.com/Minhlike/Opslens",
+      "role": "Product source, tests and infrastructure", "source_of_truth": "product-code",
+      "permissions": ["reference-only"],
+      "sync_rule": "Never write or push from AgentTutor"
+    }
+  ]
+}

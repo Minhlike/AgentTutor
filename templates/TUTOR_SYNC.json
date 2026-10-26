@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "handoff_id": "ho-20261027-example",
+  "timestamp": "2026-10-27T10:00:00+07:00",
+  "source": "chatgpt-primary-tutor",
+  "track_id": "track-devops",
+  "milestone_id": "ms-devops-s56",
+  "status": "IN_PROGRESS",
+  "summary": "Tóm tắt ngắn kết quả thực tế; thay toàn bộ ví dụ trước khi gửi.",
+  "evidence": [],
+  "competencies": {"updated": []},
+  "decisions": [],
+  "misconceptions": [],
+  "open_issues": ["Điều gì còn chờ kiểm tra?"],
+  "next_action": "Một hành động cụ thể cho phiên học tiếp theo."
+}

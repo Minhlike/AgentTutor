@@ -1,0 +1,46 @@
+{
+  "context": {
+    "decisions": [],
+    "last_handoff_id": null,
+    "misconceptions": [],
+    "next_action": "Nhận kết quả Infrastructure Baseline của S56 từ ChatGPT/người học, kèm bằng chứng và tiêu chí nghiệm thu.",
+    "open_issues": [
+      "Chưa có kết quả Infrastructure Baseline S56 hoặc liên kết bằng chứng để Agent kiểm tra."
+    ],
+    "summary": "Baseline DevOps do người học cung cấp: 55/66 buổi đã nghiệm thu, Phase 11 hoàn thành, S56 đang thực hiện. Chưa kiểm tra lab hoặc bằng chứng độc lập."
+  },
+  "entities": {
+    "competency": {},
+    "milestone": {
+      "ms-devops-phase-11": {
+        "evidence_ids": [],
+        "status": "COMPLETED",
+        "summary": "Phase 11 đã hoàn thành theo báo cáo của người học; chưa có kiểm tra độc lập trong AgentTutor.",
+        "updated_at": "2026-10-27T00:00:00+07:00",
+        "verification": "CLAIMED"
+      },
+      "ms-devops-s56": {
+        "evidence_ids": [],
+        "status": "IN_PROGRESS",
+        "summary": "S56 đang thực hiện; chờ kết quả Infrastructure Baseline.",
+        "updated_at": "2026-10-27T00:00:00+07:00",
+        "verification": "CLAIMED"
+      }
+    },
+    "program": {
+      "program-devops": {
+        "details": {
+          "accepted_sessions": 55,
+          "total_sessions": 66
+        },
+        "evidence_ids": [],
+        "status": "IN_PROGRESS",
+        "summary": "Người học báo cáo đã nghiệm thu 55/66 buổi DevOps; Agent chưa kiểm tra bằng chứng lab.",
+        "updated_at": "2026-10-27T00:00:00+07:00",
+        "verification": "CLAIMED"
+      }
+    }
+  },
+  "last_event_id": "evt-20261027-devops-baseline",
+  "schema_version": 1
+}

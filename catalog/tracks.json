@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "tracks": [
+    {"id":"track-foundations","name":"Software foundations","status":"DRAFT","languages":["java","python","go","typescript"],"topics":["software construction","DSA","testing","networking"]},
+    {"id":"track-java","name":"Java backend","status":"DRAFT","languages":["java"],"topics":["Java","Spring Boot","PostgreSQL"]},
+    {"id":"track-python","name":"Python practice","status":"DRAFT","languages":["python"],"topics":["Python","data","API","AI integration"]},
+    {"id":"track-go","name":"Go systems","status":"DRAFT","languages":["go"],"topics":["Go","concurrency","cloud-native services"]},
+    {"id":"track-web","name":"Web","status":"DRAFT","languages":["javascript","typescript"],"topics":["HTML","CSS","JavaScript","TypeScript","React"]},
+    {"id":"track-distributed","name":"Distributed systems","status":"DRAFT","languages":["java","python","go"],"topics":["Redis","Kafka","consistency"]},
+    {"id":"track-devops","name":"DevOps","status":"DRAFT","languages":[],"topics":["CI/CD","containers","infrastructure","observability"]}
+  ]
+}

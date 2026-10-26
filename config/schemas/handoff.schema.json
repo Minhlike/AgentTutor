@@ -1,0 +1,28 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"TUTOR_SYNC v1",
+  "type":"object","additionalProperties":false,
+  "required":["schema_version","handoff_id","timestamp","source","track_id","milestone_id","status","summary","evidence","competencies","decisions","misconceptions","open_issues","next_action"],
+  "properties":{
+    "schema_version":{"const":1},
+    "handoff_id":{"type":"string","pattern":"^ho-[a-z0-9][a-z0-9-]{2,79}$"},
+    "timestamp":{"type":"string","format":"date-time"},
+    "source":{"const":"chatgpt-primary-tutor"},
+    "track_id":{"type":"string"},
+    "milestone_id":{"type":"string"},
+    "status":{"enum":["NOT_STARTED","IN_PROGRESS","BLOCKED","COMPLETED"]},
+    "summary":{"type":"string","minLength":1,"maxLength":1000},
+    "evidence":{"type":"array","items":{"$ref":"#/$defs/evidence"}},
+    "competencies":{"type":"object","additionalProperties":false,"required":["updated"],"properties":{"updated":{"type":"array","items":{"$ref":"#/$defs/competency_change"}}}},
+    "decisions":{"type":"array","items":{"$ref":"#/$defs/decision"}},
+    "misconceptions":{"type":"array","items":{"$ref":"#/$defs/misconception"}},
+    "open_issues":{"type":"array","items":{"type":"string","minLength":1}} ,
+    "next_action":{"type":"string","minLength":1,"maxLength":1000}
+  },
+  "$defs":{
+    "evidence":{"type":"object","additionalProperties":false,"required":["id","type","reference","reported_verification"],"properties":{"id":{"type":"string","pattern":"^ev-[a-z0-9][a-z0-9-]{2,79}$"},"type":{"enum":["commit","pull_request","test","review","document","report"]},"reference":{"type":"string","minLength":1,"maxLength":2000},"reported_verification":{"enum":["CLAIMED","PRACTICED","VERIFIED","ASSESSED","COMPLETED","BLOCKED"]}}},
+    "competency_change":{"type":"object","additionalProperties":false,"required":["id","status","summary"],"properties":{"id":{"type":"string"},"status":{"enum":["NOT_STARTED","IN_PROGRESS","BLOCKED","COMPLETED"]},"summary":{"type":"string","minLength":1,"maxLength":1000}}},
+    "decision":{"type":"object","additionalProperties":false,"required":["id","summary","rationale","tradeoffs"],"properties":{"id":{"type":"string","pattern":"^dec-[a-z0-9][a-z0-9-]{2,79}$"},"summary":{"type":"string","minLength":1,"maxLength":1000},"rationale":{"type":"string","minLength":1,"maxLength":1000},"tradeoffs":{"type":"string","minLength":1,"maxLength":1000}}},
+    "misconception":{"type":"object","additionalProperties":false,"required":["id","summary","root_cause","remedy"],"properties":{"id":{"type":"string","pattern":"^mis-[a-z0-9][a-z0-9-]{2,79}$"},"summary":{"type":"string","minLength":1,"maxLength":1000},"root_cause":{"type":"string","minLength":1,"maxLength":1000},"remedy":{"type":"string","minLength":1,"maxLength":1000}}}
+  }
+}

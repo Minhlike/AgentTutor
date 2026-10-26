@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "milestones": [
+    {"id":"ms-devops-phase-11","track_id":"track-devops","name":"DevOps Phase 11","competency_ids":[],"acceptance":"Theo nghiệm thu của gia sư/người học; cần liên kết bằng chứng để Agent xác minh độc lập."},
+    {"id":"ms-devops-s56","track_id":"track-devops","name":"S56 Infrastructure Baseline","competency_ids":["comp-devops-baseline"],"acceptance":"Kết quả Infrastructure Baseline và bằng chứng kiểm tra theo rubric."}
+  ]
+}
